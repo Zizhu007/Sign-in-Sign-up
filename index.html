@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+      integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <title>Authentication is Fun</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: lightseagreen;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="authForm">
+      <h2>Sign Up or Sign In</h2>
+      <input type="email" placeholder="email" id="userEmail" />
+      <input type="password" placeholder="password" id="userPassword" />
+      <br /><br />
+      <button id="signUpButton">Sign Up</button>
+      <button id="signInButton">Sign In</button>
+    </div>
+
+    <div id="secretContent">
+     
+
+     <!-- content -->
+
+     <html>
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar bg-secondary sticky-top navbar-expand-lg">
+      <div class="container">
+        <a href="#" class="d-flex" style="color: inherit; text-decoration: none;">
+          <i class="fa-solid fa-kit-medical h1 pe-2"></i>
+          <h1>Pluto Pharmacy</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex gap-2">
+          <input type="text" class="form-control"/>
+          <button class="btn btn-success">Search</button>
+          <button id="signOutButton">Sign Out</button>
+        </form>
+      </div>
+    </nav>
+
+    <div id="shabootstrapCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#shabootstrapCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#shabootstrapCarousel" data-bs-slide-to="1" class="active"></button>
+        <button type="button" data-bs-target="#shabootstrapCarousel" data-bs-slide-to="2" class="active"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block mb-5 img-header" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbFhkv-Mj00yfYpaBvCxeo9-xeMgfe9f4bzQ&s" width=" 1200" height="800"> 
+        </div>
+        <div class="carousel-item">
+          <img class="d-block mb-5 img-header" src="https://c8.alamy.com/comp/KGTANE/portrait-of-smiling-man-showing-thums-up-KGTANE.jpg" width="1200" height="800">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block mb-5 img-header" src="https://media.istockphoto.com/id/1912511508/photo/portrait-of-happy-high-school-students-looking-at-camera.jpg?s=612x612&w=0&k=20&c=69wPs2E1pjk9UfRgEZogIFweao1Uw8FgXLDOZmYtLVg=" width="1200" height="800">
+        </div>
+      </div>
+      <button type="button" class="carousel-control-prev" data-bs-target="#shabootstrapCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visuall-hidden">Previous</span>
+      </button>
+      <button type="button" class="carousel-control-next" data-bs-target="#shabootstrapCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visuall-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <div class="container">
+   
+      <div class="row g-2">
+
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="" 
+                   src="https://admin.acceleratingscience.com/identifying-threats/wp-content/uploads/sites/11/2020/09/istock-49500466720_1__methpackages.jpg"
+                    />
+              <h4 class="mt-3 card-title">#000001: Tawas</h4>
+              <p class="text-body-secondary">Para sa mabaho</p>
+              <div class="d-flex flex-row-reverse gap-1">
+                <button type="button" class="btn btn-secondary">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+                   class="btn btn-success">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="" 
+                   src="https://st-b.medsgo.ph/images/detailed/32/Aero.png"
+                    />
+              <h4 class="mt-3">#000002: Salbutamol</h4>
+              <p class="text-body-secondary">Para sa mga inuubo</p>
+              <div class="d-flex flex-row-reverse gap-1">
+                <button type="button" class="btn btn-secondary">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+                   class="btn btn-success">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="" 
+                   src="https://media.npr.org/assets/img/2010/12/22/amanita-muscaria-mushroom_wide-521dfc7fcd6e86fc6583403a89d8fbf92043225e.jpg?s=1100&c=50&f=jpeg" 
+                    />
+              <h4 class="mt-3">#000003: Shrooms</h4>
+              <p class="text-body-secondary">"Oppenheimer!"</p>
+              <div class="d-flex flex-row-reverse gap-1">
+                <button type="button" class="btn btn-secondary">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+                   class="btn btn-success">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+         
+      <div class="row gx-2 mt-2">
+
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="" 
+                   src="https://t4.ftcdn.net/jpg/00/78/07/71/360_F_78077186_o5IgVOHzvkhm91YcUEhv5nlp5nHnpQUU.jpg" 
+                    />
+              <h4 class="mt-3">#000004: Medicine</h4>
+              <p class="text-body-secondary">"Medicinal!"</p>
+              <div class="d-flex flex-row-reverse gap-1">
+                <button type="button" class="btn btn-secondary">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+                   class="btn btn-success">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="" 
+                   src="https://t4.ftcdn.net/jpg/10/27/76/83/360_F_1027768365_qlRvnLzcnp6Sj6yvbBTnxYC1xCtrZRqe.jpg" 
+                    />
+              <h4 class="mt-3">#000005: The Red Pill</h4>
+              <p class="text-body-secondary">"I love trad-wives!"</p>
+              <div class="d-flex flex-row-reverse gap-1">
+                <button type="button" class="btn btn-secondary">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+                   class="btn btn-success">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <img class="" 
+                   src="https://variety.com/wp-content/uploads/2021/04/Snoop-Dogg.jpg?w=1000&h=562&crop=1" 
+                   />
+              <h4 class="mt-3">#000006: Snoop Dogg</h4>
+              <p class="text-body-secondary">"D O DOUBLE G!!!"</p>
+              <div class="d-flex flex-row-reverse gap-1">
+                <button type="button" class="btn btn-secondary">
+                  <i class="fa-solid fa-heart"></i>
+                </button>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+                   class="btn btn-success">
+                  <i class="fa-solid fa-cart-plus"></i>
+                  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- <div class="sticky-bottom">
+        <h1>Hot Police Offers In Your Area!</h1>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/050/957/656/small/confident-female-police-officer-standing-with-arms-crossed-photo.jpg"/>
+      </div> -->
+    </div>
+
+    <div class="footer bg-secondary mt-5">
+
+      <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary bg-red">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Shabootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+              <span class="fs-5">Shabootstrap</span>
+            </a>
+            <ul class="list-unstyled small">
+              <li class="mb-2">Designed and built with all the (medicinal) drugs in the world with the help of <a href="https://dims.apnews.com/dims4/default/b3c3b71/2147483647/strip/false/crop/5624x3750+0+0/resize/1486x991!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F93%2F9e%2F4b0db65c4d63088fa66b8d3ef9eb%2F92b5af5d52c5439bb6f869b7101b804a">our patrons</a>.</li>
+              <li class="mb-2">Code licensed by LPU- Viva Pirata!</li>
+              <li class="mb-2">Currently v5.3.3.</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="/">Home</a></li>
+              <li class="mb-2"><a href="/docs/5.3/">Docs</a></li>
+              <li class="mb-2"><a href="/docs/5.3/examples/">Examples</a></li>
+              <li class="mb-2"><a href="https://icons.getbootstrap.com/">Icons</a></li>
+              <li class="mb-2"><a href="https://themes.getbootstrap.com/">Themes</a></li>
+              <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
+              <li class="mb-2"><a href="https://cottonbureau.com/people/bootstrap" target="_blank" rel="noopener">Swag Store</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>Guides</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="/docs/5.3/getting-started/">Getting started</a></li>
+              <li class="mb-2"><a href="/docs/5.3/examples/starter-template/">Starter template</a></li>
+              <li class="mb-2"><a href="/docs/5.3/getting-started/webpack/">Webpack</a></li>
+              <li class="mb-2"><a href="/docs/5.3/getting-started/parcel/">Parcel</a></li>
+              <li class="mb-2"><a href="/docs/5.3/getting-started/vite/">Vite</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>Projects</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="https://github.com/twbs/bootstrap" target="_blank" rel="noopener">Bootstrap 5</a></li>
+              <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev" target="_blank" rel="noopener">Bootstrap 4</a></li>
+              <li class="mb-2"><a href="https://github.com/twbs/icons" target="_blank" rel="noopener">Icons</a></li>
+              <li class="mb-2"><a href="https://github.com/twbs/rfs" target="_blank" rel="noopener">RFS</a></li>
+              <li class="mb-2"><a href="https://github.com/twbs/examples/" target="_blank" rel="noopener">Examples repo</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>Community</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues" target="_blank" rel="noopener">Issues</a></li>
+              <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions" target="_blank" rel="noopener">Discussions</a></li>
+              <li class="mb-2"><a href="https://github.com/sponsors/twbs" target="_blank" rel="noopener">Corporate sponsors</a></li>
+              <li class="mb-2"><a href="https://opencollective.com/bootstrap" target="_blank" rel="noopener">Open Collective</a></li>
+              <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5" target="_blank" rel="noopener">Stack Overflow</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/b8fb466bb6.js" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+     
+      
+    </div>
+
+    <script type="module">
+      //Update the below URL with the appropriate version if necessary.
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        onAuthStateChanged,
+        signOut,
+        //Update the below URL with the appropriate version if necessary.
+      } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+
+      // INSERT YOUR FIREBASE CONFIG OBJECT HERE
+      const firebaseConfig = {
+        apiKey: "AIzaSyCnkzqo0ebWyyvlXj2FL3LknsNN6SfhKTs",
+  authDomain: "crud-database-2b9c1.firebaseapp.com",
+  projectId: "crud-database-2b9c1",
+  storageBucket: "crud-database-2b9c1.firebasestorage.app",
+  messagingSenderId: "670545211923",
+  appId: "1:670545211923:web:1850dc198ca2c66a5445e6"
+      };
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+
+      const userEmail = document.querySelector("#userEmail");
+      const userPassword = document.querySelector("#userPassword");
+      const authForm = document.querySelector("#authForm");
+      const secretContent = document.querySelector("#secretContent");
+      const signUpButton = document.querySelector("#signUpButton");
+      const signInButton = document.querySelector("#signInButton");
+      const signOutButton = document.querySelector("#signOutButton");
+
+      secretContent.style.display = "none";
+
+      const userSignUp = async () => {
+        const signUpEmail = userEmail.value;
+        const signUpPassword = userPassword.value;
+        createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            console.log(user);
+            Swal.fire("Your Account is succesfully created!");
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode + errorMessage);
+          });
+      };
+
+      const userSignIn = async () => {
+        const signInEmail = userEmail.value;
+        const signInPassword = userPassword.value;
+        signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            Swal.fire("You have signed in successfully!");
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode + errorMessage);
+          });
+      };
+
+      const checkAuthState = async () => {
+        onAuthStateChanged(auth, (user) => {
+          if (user) {
+            authForm.style.display = "none";
+            secretContent.style.display = "block";
+          } else {
+            authForm.style.display = "block";
+            secretContent.style.display = "none";
+          }
+        });
+      };
+
+      const userSignOut = async () => {
+        await signOut(auth);
+        Swal.fire("User Logout");
+      };
+
+      checkAuthState();
+
+      signUpButton.addEventListener("click", userSignUp);
+      signInButton.addEventListener("click", userSignIn);
+      signOutButton.addEventListener("click", userSignOut);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/090fe43456.js" crossorigin="anonymous"></script>
+  </body>
+</html>
